@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f1faf5">
+  <title>Artikel | Wellora</title>
+  <link rel="icon" type="image/png" href="assets/logo wellora.png">
+  <link rel="stylesheet" href="detail.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="wrap">
+    <a href="index.html#artikel" class="back">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      Kembali ke Semua Artikel
+    </a>
+
+    <article class="article" id="detail-berita" hidden>
+      <img class="hero" alt="">
+      <div class="body">
+        <div class="meta">
+          <span class="chip"></span>
+          <span class="i waktu-detail"></span>
+          <span class="i tanggal-detail">7 November 2026</span>
+        </div>
+        <h1></h1>
+        <p class="lead"></p>
+        <div class="isi-artikel"></div>
+        <div class="foot">
+          <span class="share-label">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4M15.4 6.5l-6.8 4"/></svg>
+            Bagikan Artikel Ini
+          </span>
+          <div class="share" aria-label="Bagikan artikel">
+            <a href="https://wa.me/?text=" aria-label="Bagikan lewat WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://t.me/share/url" aria-label="Bagikan lewat Telegram"><i class="fa-brands fa-telegram"></i></a>
+            <button type="button" class="salin-tautan" aria-label="Salin tautan artikel"><i class="fa-solid fa-link"></i></button>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <h2 class="related-title">Artikel Terkait Lainnya</h2>
+    <div class="grid" id="artikel-terkait"></div>
+  </main>
+  <script>
+    // document.querySelector(".salin-tautan")?.addEventListener("click", async () => {
+    //   try {
+    //     await navigator.clipboard.writeText(window.location.href);
+    //     document.querySelector(".salin-tautan").setAttribute("aria-label", "Tautan berhasil disalin");
+    //   } catch (error) {
+    //     window.prompt("Salin tautan artikel ini:", window.location.href);
+    //   }
+    // });
+    // document.querySelector('a[aria-label="Bagikan lewat WhatsApp"]')?.addEventListener("click", (event) => {
+    //   event.currentTarget.href = `https://wa.me/?text=${encodeURIComponent(document.title + " " + window.location.href)}`;
+    // });
+    // document.querySelector('a[aria-label="Bagikan lewat Telegram"]')?.addEventListener("click", (event) => {
+    //   event.currentTarget.href = `https://t.me/share/url?url=${encodeURIComponent(window.location.href)}&text=${encodeURIComponent(document.title)}`;
+    // });
+  </script>
+</body>
+</html>
